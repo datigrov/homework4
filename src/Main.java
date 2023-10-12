@@ -75,7 +75,7 @@ public class Main {
         // Задача № 6 //
         int allPlaceInTheCarriage = 120;
         int sitPlaceInTheCarriage = 60;
-        if (allPlaceInTheCarriage = 60  sitPlaceInTheCarriage = 55) {
+
 
     }
 }
