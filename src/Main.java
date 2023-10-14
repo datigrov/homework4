@@ -6,44 +6,29 @@ public class Main {
 
         // Задача № 1//
 
-        int age = 18;
+        int age = 17;
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " то он совершеннолетний");
-        }
-        age = 17;
-        if (age < 18) {
-            System.out.println("Если возраст человека равен " + age
+        } else {
+                    System.out.println("Если возраст человека равен " + age
                     + " то он не достиг совершеннолетия, нужно немного подождать");
         }
 
         // Задача № 2//
-        int temperature = 3;
-        if (temperature < 6) {
-            System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
-        } else {
-            System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
-        }
-        temperature = 10;
-        if (temperature >= 15) {
+        int temperature = 6;
+        if (temperature < 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
         } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
 
         // Задача № 3 //
-        int speed = 40;
-        if (speed >= 61) {
-            System.out.println("Если скорость " + speed + " то прийдется заплатить штраф");
-        } else {
-            System.out.println("Если скорость " + speed + " то можно ездить спокойно");
-        }
-        speed = 70;
+        int speed = 61;
         if (speed > 60) {
             System.out.println("Если скорость " + speed + " то прийдется заплатить штраф");
-        } else {
+        } else if (speed < 60) {
             System.out.println("Если скорость " + speed + " то можно ездить спокойно");
         }
-
 
         // Задача № 4 //
         int peopleAge = 5;
@@ -73,9 +58,27 @@ public class Main {
         }
 
         // Задача № 6 //
-        int allPlaceInTheCarriage = 120;
-        int sitPlaceInTheCarriage = 60;
+        int passengers = 53;
+        int standingPlaceInTheCarriage = 102 - passengers;
+        int sitPlaceInTheCarriage = 60 - passengers;
+        if (sitPlaceInTheCarriage > 0) {
+            System.out.println("Сидячих мест в вагоне " + sitPlaceInTheCarriage);
+        } else if (standingPlaceInTheCarriage > 0) {
+            System.out.println("Стоячих мест в вагоне " + standingPlaceInTheCarriage);
+        } else {
+            System.out.println("Вагон заполнен, свободных мест нет");
+        }
 
-
+        // Задача № 7 //
+        int one = 5;
+        int two = 6;
+        int three = 7;
+        if (three > one && three >two) {
+            System.out.println("Число " + three + " больше числа " + two + " и " + one);
+        } else if (two > one) {
+            System.out.println("Число " + two + " больше числа " + one);
+        } else {
+            System.out.println("Число " + one +" наименьшее");
+        }
     }
 }
